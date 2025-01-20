@@ -3,8 +3,7 @@ import pandas as pd
 import pickle
 
 # Load the saved model, scaler, one-hot encoder, and training columns from the 'model' folder
-import os
-with open(os.path.join(os.getcwd(), 'model', 'random_forest_model.pkl'), 'rb') as f:
+with open('model/random_forest_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 
