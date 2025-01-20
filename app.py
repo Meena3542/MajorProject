@@ -3,17 +3,17 @@ import pandas as pd
 import pickle
 
 # Load the saved model, scaler, one-hot encoder, and training columns from the 'model' folder
-with open('model/random_forest_model.pkl', 'rb') as f:
+with open('random_forest_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 
-with open('model/scaler.pkl', 'rb') as f:
+with open('scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
-with open('model/onehot_encoder.pkl', 'rb') as f:
+with open('onehot_encoder.pkl', 'rb') as f:
     encoder = pickle.load(f)
 
-with open('model/training_columns.pkl', 'rb') as f:
+with open('training_columns.pkl', 'rb') as f:
     training_columns = pickle.load(f)
 st.markdown("""
 <style>
